@@ -43,10 +43,9 @@ NFT Metadata will be stored on IPFS through Pinata gateway.
 ## Quickstart
 
 ```
-git clone https://github.com/Kresus-Labs-Inc/kresus-evm-smart-contracts.git
-cd kresus-evm-smart-contracts
+git clone git@github.com:Kresus-Labs-Inc/nft-lens.git
+cd nft-lens
 yarn
-cd example-directory-name
 npx hardhat compile
 ```
 
