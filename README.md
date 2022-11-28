@@ -1,9 +1,5 @@
 # NFT Lens
 
-This project mainly consists of 2 contracts:
-  1. ERC1155URIStorage - an openzeppelin standard which is an extension of ERC1155.
-  2. NFTLens - contract inherited from ERC1155URIStorage which is a wrapper contract consisting mint functionality.
-
 ### Overview ###
 NFTLens is a self-minting and gifting feature inside Kresus Application intended for new users to experience the web3 ecosystem & NFT technology. This overview describes how NFTLens fits into the overall Kresus application.
 
@@ -14,6 +10,10 @@ NFT Metadata will be stored on IPFS through Pinata gateway.
 
 ![alt text](docs/images/flow.png)
 
+
+This project mainly consists of 2 contracts:
+  1. ERC1155URIStorage - an openzeppelin standard which is an extension of ERC1155.
+  2. NFTLens - contract inherited from ERC1155URIStorage which is a wrapper contract consisting mint functionality.
 
 ### Functionalities ###
 * Mint - Function in NFTLens which internally calls `_mint()` of parent ERC1155 contract to mint a new token ID. Also calls `_setURI()` in ERC1155URIStorage to store the external link to the metadata of a particular tokenID. Once URI is set for a tokenID it cannot be changed, hence maintaining immutability of the NFT token.
