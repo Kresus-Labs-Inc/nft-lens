@@ -6,7 +6,7 @@ async function main() {
     console.log("Account balance:", (await deployer.getBalance()).toString());
   
     const NFTLens = await ethers.getContractFactory("NFTLens");
-    const lens = await NFTLens.deploy();
+    const lens = await NFTLens.deploy(deployer.address);
   
     console.log("Lens contract address:", lens.address);
   }
